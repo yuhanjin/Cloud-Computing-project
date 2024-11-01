@@ -1,6 +1,6 @@
 ### 使用以下命令构建 Docker 镜像：
 ```bash
-docker build -t grade-analysis
+docker build -t grade-analysis .
 ```
 ### 运行容器
 
