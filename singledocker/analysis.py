@@ -24,7 +24,7 @@ def calculate_statistics(df):
 
 def main():
     # 读取数据并计算
-    df = read_grade_data('Grade Table.csv')
+    df = read_grade_data('grade_table.csv')
     df = calculate_statistics(df)
     
     # 保存需要的列，不排序
