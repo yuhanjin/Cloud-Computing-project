@@ -12,7 +12,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # 复制程序文件和数据文件
 COPY analysis.py .
-COPY Grade\ Table.csv .
+COPY grade_table.csv .
 
 # 运行程序
 CMD ["python", "analysis.py"]
