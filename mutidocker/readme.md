@@ -1,6 +1,6 @@
 ### 构建容器
 ```bash
-sudo docker-compose up
+sudo docker compose up
 ```
 
 ### 运行程序
