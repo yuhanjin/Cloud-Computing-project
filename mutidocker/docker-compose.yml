@@ -1,0 +1,22 @@
+version: '3'
+services:
+  data-reader:
+    build: ./services/data_reader
+    ports:
+      - "5001:5001"
+
+  calculator:
+    build: ./services/calculator
+    ports:
+      - "5002:5002"
+    depends_on:
+      - data-reader
+
+  output-service:
+    build: ./services/output_service
+    ports:
+      - "5003:5003"
+    volumes:
+      - ./output:/app/output
+    depends_on:
+      - calculator
